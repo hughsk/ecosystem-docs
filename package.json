@@ -4,13 +4,28 @@
   "description": "Aggregate and store a collection of data for GitHub repositories, intended for use with documenting package ecosystems on npm",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "ecosystem-docs": "bin.js"
+  },
   "scripts": {},
   "author": {
     "name": "Hugh Kennedy",
     "email": "hughskennedy@gmail.com",
     "url": "http://hughsk.io/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "after": "^0.8.1",
+    "debug": "^2.2.0",
+    "ghauth": "^3.0.0",
+    "level": "^1.1.0",
+    "level-sublevel": "^6.4.6",
+    "map-limit": "0.0.1",
+    "minimist": "^1.1.1",
+    "mkdirp": "^0.5.1",
+    "request": "^2.57.0",
+    "split": "^1.0.0",
+    "userhome": "^1.0.0"
+  },
   "devDependencies": {},
   "repository": {
     "type": "git",
