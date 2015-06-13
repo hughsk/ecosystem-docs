@@ -1,0 +1,36 @@
+{
+  "name": "ecosystem-docs",
+  "version": "1.0.0",
+  "description": "Aggregate and store a collection of data for GitHub repositories, intended for use with documenting package ecosystems on npm",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {},
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/ecosystem-docs.git"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "documentation",
+    "docs",
+    "modules",
+    "packages",
+    "automatic",
+    "aggregate",
+    "store",
+    "pull",
+    "api",
+    "github"
+  ],
+  "homepage": "https://github.com/hughsk/ecosystem-docs",
+  "bugs": {
+    "url": "https://github.com/hughsk/ecosystem-docs/issues"
+  }
+}

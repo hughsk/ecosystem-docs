@@ -1,0 +1,14 @@
+
+Usage:
+  ecosystem-docs <command> {OPTIONS}
+
+Available Commands:
+  sync   Syncs the database with GitHub
+  read   Outputs the stored information for the input repositories
+  dump   Dumps all of the currently stored information to stdout
+
+Options:
+  -d, --data   Location of the leveldb cache. Defaults to ~/.ecosystem-docs
+  -h, --help   Display this message
+  -t, --token  Pass in a custom GitHub token. Otherwise this will be prompted
+               for when first using the tool.
