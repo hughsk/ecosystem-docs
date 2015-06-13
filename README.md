@@ -58,9 +58,9 @@ line-delimited JSON:
 
 ``` bash
 cat repos.txt | ecosystem-docs read
-{"user":"hughsk","path":"hughsk/icosphere","name":"icosphere","head":"e7c9bfcefac34b5be57d066a50428b30b15e3ac8","readme":"...","contributors":["hughsk","kumavis"],"page":"http://hughsk.io/icosphere/","package":{}}
-{"user":"mattdesl","path":"mattdesl/budo","name":"budo","head":"0951e8594d6df0e6ec630fa8cb1bde5d4615fbdf","readme":"...","contributors":["mattdesl","yoshuawuyts","thibauts"],"page":false,"package":{}}
-{"user":"stackgl","path":"stackgl/glslify","name":"glslify","head":"81ca203b6dee320508953e2be256250d44871a70","readme":"...","contributors":["hughsk","chrisdickinson","mattdesl","mikolalysenko","rippedspine"],"page":false,"package":{}}
+{"user":"hughsk","path":"hughsk/icosphere","name":"icosphere","head":"e7c9bfcefac34b5be57d066a50428b30b15e3ac8","readme":"...","contributors":[{"login":"hughsk"},{"login":"kumavis"}],"page":"http://hughsk.io/icosphere/","package":{}}
+{"user":"mattdesl","path":"mattdesl/budo","name":"budo","head":"0951e8594d6df0e6ec630fa8cb1bde5d4615fbdf","readme":"...","contributors":[{"login":"mattdesl"},{"login":"yoshuawuyts"},{"login":"thibauts"}],"page":false,"package":{}}
+{"user":"stackgl","path":"stackgl/glslify","name":"glslify","head":"81ca203b6dee320508953e2be256250d44871a70","readme":"...","contributors":[{"login":"hughsk"},{"login":"chrisdickinson"},{"login":"mattdesl"},{"login":"mikolalysenko"},{"login":"rippedspine"}],"page":false,"package":{}}
 ```
 
 Each repository has the following properties:
@@ -70,9 +70,9 @@ Each repository has the following properties:
 * `path`: The user/name path of the GitHub repository.
 * `head`: The latest recorded commit in that repository.
 * `readme`: The contents of the README file, according to GitHub.
-* `contributors`: A list of users who've contributed to the repository on GitHub.
 * `page`: A resolved link to the GitHub pages URL, or false if it doesn't exist.
 * `package`: the latest `package.json` committed to GitHub.
+* `contributors`: A list of users who've contributed to the repository on GitHub: all of their associated profile data from the API.
 
 Results are cached to minimise requests to the GitHub API, but
 every sync will create at least one API request per repository

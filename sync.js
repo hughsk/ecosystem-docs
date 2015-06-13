@@ -85,8 +85,6 @@ function syncDocs(repoList, options, done) {
 
       data = data.sort(function(a, b) {
         return b.contributions - a.contributions
-      }).map(function(user) {
-        return user.login
       })
 
       repo.contributors = data
