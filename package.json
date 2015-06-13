@@ -1,6 +1,6 @@
 {
   "name": "ecosystem-docs",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Aggregate and store a collection of data for GitHub repositories, intended for use with documenting package ecosystems on npm",
   "main": "index.js",
   "license": "MIT",
