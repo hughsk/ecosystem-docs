@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+var path = require('path')
+
 const argv = require('minimist')(process.argv.slice(2), {
   alias: {
     t: 'token',
@@ -82,7 +84,7 @@ auth(function(err, data) {
 })
 
 function help() {
-  require('fs').createReadStream('help.txt')
+  require('fs').createReadStream(path.join(__dirname, 'help.txt'))
     .once('close', function() {
       console.error()
       process.exit(1)
